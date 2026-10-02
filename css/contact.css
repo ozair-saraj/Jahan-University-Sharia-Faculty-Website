@@ -1,0 +1,209 @@
+@font-face{
+    font-family: body-f;
+    src: url(../fonts/digitype-studio-mainlux-light.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: body-f;
+}
+body{
+    background-image: url(../img/mhk_11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255); padding-left: 15px; padding-right: 15px; font-family: body-f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    width: 10%;
+    text-align: center;
+}
+.logo-img{
+    width: 100px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 1s;
+}
+.logo-img:hover{
+    transform: translateX(15px);
+}
+.nav{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head{
+    width: 50%;
+    padding-left: 3%;
+    flex-grow: 1;
+}
+.nav h1{
+    font-size: 30px; color: #222;
+}
+.nav ul li{
+    list-style-type: none; display: inline-block; margin: 5px;
+}
+.nav ul li:hover{
+    transform: scale(1.05);
+}
+#link-1:hover{
+    border-bottom: 3px solid orange;
+}
+#link-3:hover{
+    border-bottom: 3px solid orange;
+}
+#link-4:hover{
+    border-bottom: 3px solid orange;
+}
+.nav ul li .home-, .about, .con-{
+    font-size: 18px; color: rgb(27, 26, 26); margin: 10px; font-weight: bold; text-decoration: none;
+}
+li .signin{
+    font-size: 13px;
+    background: rgba(6, 26, 68, 0.801);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+li .signin:hover{
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+li .signUp{
+    font-size: 13px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+li .signUp:hover{
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+/* main ------- */
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: body-f;
+    padding-top: 5px;
+    margin: 20px;
+}
+.container{
+    width: 100%;
+    margin-top:20px;
+    padding: 5px
+}
+.table-content{
+    width: 70%;
+    background-color: rgba(173, 216, 230,.2);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.table-img{
+    width: 85px;
+    height: 80px;
+    margin-top: 3px;
+}
+table{
+    width: 100%;
+    background-color: rgba(173, 216, 230,.1);
+    padding-top: 5px;
+    border-collapse: collapse;
+    border-radius: 2px;
+}
+table tr:hover{
+    background-color: orange;
+}
+table td{
+    border-bottom: 1px solid orange;
+    font-size: 15px;
+    font-family: body-f;
+    padding: 10px;
+}
+table td span{
+    color: blue;
+}
+table td i{
+    font-weight: bold;
+    color: rgb(32, 31, 31);
+}
+.address{
+    width: 13%;
+    background-color: rgba(173, 216, 230,.2);
+    float: right;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.address .add-i{
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+}
+.address h3{
+    font-size: 20px;
+    margin-left: 3px;
+    font-family: body-f;
+}
+.address p{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: body-f;
+}
+.call{
+    width: 13%;
+    background-color: rgba(173, 216, 230,.2);
+    float: right;
+    padding: 10px;
+    border-radius: 5px;
+}
+.call .call-i{
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+}
+.call h3{
+    font-size: 20px;
+    font-family: body-f; 
+    margin-top: 2px;
+}
+.call p{
+    font-size: 15px;
+    font-family: body-f;
+    margin-top: 10px;
+}
+@media screen and (max-width:500px)
+{
+    h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .table-img{
+        width: 30px;
+        height: 30px;
+    }
+    table td{
+        font-size: 9px;
+    }
+    .address .add-i, .call .call-i{
+        width: 20px;
+        height: 20px;
+    }
+    .address h3, .call h3{
+        font-size: 10px;
+    }
+    .address p, .call p{
+        font-size: 7px;
+    }
+}

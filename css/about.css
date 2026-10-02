@@ -1,0 +1,148 @@
+@font-face{
+    font-family: headline;
+    src: url(../fonts/digitype-studio-mainlux-light.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: headline;
+}
+body{
+    background-image: url(../img/b2.jpg);
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255); padding-left: 15px; padding-right: 15px; font-family: body-f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    width: 10%;
+    text-align: center;
+}
+.logo-img{
+    width: 100px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 1s;
+}
+.logo-img:hover{
+    transform: translateX(15px);
+}
+.nav{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head{
+    width: 50%;
+    padding-left: 3%;
+    flex-grow: 1;
+}
+.nav h1{
+    font-size: 30px; color: #222;
+}
+.nav ul li{
+    list-style-type: none; display: inline-block; margin: 5px;
+}
+.nav ul li:hover{
+    transform: scale(1.05);
+}
+#link-1:hover{
+    border-bottom: 3px solid orange;
+}
+#link-3:hover{
+    border-bottom: 3px solid orange;
+}
+#link-4:hover{
+    border-bottom: 3px solid orange;
+}
+.nav ul li .home-, .about, .con-{
+    font-size: 18px; color: rgb(27, 26, 26); margin: 10px; font-weight: bold; text-decoration: none;
+}
+li .signin{
+    font-size: 13px;
+    background: rgba(6, 26, 68, 0.801);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+li .signin:hover{
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+li .signUp{
+    font-size: 13px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+li .signUp:hover{
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+/*------ Main ----- */
+.container{
+    margin-top: 20px;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.about-colleg{
+    width: 55%;
+    padding: 20px;
+}
+.about-colleg span{
+    color: blue;
+}
+.about-colleg h2{
+    margin: 10px;
+    font-family: headline;
+    font-size: 30px;
+    color: #041538;
+}
+.about-colleg p{
+    color: rgb(32, 32, 32);
+    text-align: justify;
+}
+/*-- About Developer --*/
+.about-developer{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-developer .developer-header{
+    width: 100%;
+    text-align: center;
+}
+.about-developer .developer-i{
+    height: 270px;
+    margin: 10px;
+}
+.about-developer h3{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.social{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon-{
+    width: 40px;
+    margin: 10px;
+    transition: .5s;
+}
+.icon-:hover{
+    transform: scale(1.08);
+}

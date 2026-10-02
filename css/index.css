@@ -1,0 +1,409 @@
+@font-face{
+    font-family: IranSans;
+    src: url(../fonts/B\ Yekan.ttf);
+}
+@font-face{
+    font-family: body-f;
+    src: url(../fonts/digitype-studio-mainlux-light.otf);
+}
+@font-face{
+    font-family: fonts-;
+    src: url(../fonts/Helvetica.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: body-f;
+}
+body{
+    background-image: url(../img/background.svg);
+}
+.container{
+    box-sizing: border-box;
+
+}
+/* start of navbar */
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255); padding-left: 15px; padding-right: 15px; font-family: body-f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    width: 10%;
+    text-align: center;
+}
+.logo-img{
+    width: 100px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 1s;
+}
+.logo-img:hover{
+    transform: translateX(15px);
+}
+.nav{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head{
+    width: 50%;
+    padding-left: 3%;
+    flex-grow: 1;
+}
+
+.nav ul li{
+    list-style-type: none; display: inline-block; margin: 5px;
+}
+.nav ul li:hover{
+    transform: scale(1.05);
+}
+#link-1:hover{
+    border-bottom: 3px solid orange;
+}
+#link-3:hover{
+    border-bottom: 3px solid orange;
+}
+#link-4:hover{
+    border-bottom: 3px solid orange;
+}
+.nav ul li .home-, .about, .con-{
+    font-size: 18px; color: rgb(27, 26, 26); margin: 10px; font-weight: bold; text-decoration: none;
+}
+li .signin{
+    font-size: 13px;
+    background: rgba(6, 26, 68, 0.801);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+li .signin:hover{
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+li .signUp{
+    font-size: 13px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+li .signUp:hover{
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+/* End of navbar // start of Hero section ---*/
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    background-color: rgba(6, 26, 68, 0.801);
+    background-blend-mode: multiply;
+}
+.left-header{
+    font-size: 75px;
+    font-family: fonts-;
+    color: rgb(252, 251, 250);
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background-color: rgba(9, 9, 10, 0.295);
+    border-radius: 40px;
+}
+/* End of Hero // And start of Main */
+.main-header{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 25px;
+}
+.main-header span{
+    color: orange;
+    font-size: 30px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    margin-top: 30px;
+}
+.box{
+    width: 400px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.03);
+}
+.topic{
+    width: 80%;
+    height: 250px;
+    margin-left:25px;
+    text-align: center;
+}
+.box ul{
+    margin: 19px;
+}
+.box-image{
+    width: 80%px; height: 100px;
+}
+.box-h1 {
+    font-size: 20px;color: black; font-family: body-f; margin: 20px;
+}
+.topic p{
+    font-size: 15px; color: #222; text-align: justify; font-family: body-f;
+}
+.box li{
+    font-size: 15px; color: #222; text-align: justify; font-weight: lighter;
+}
+.read-more{
+    width: 80px;
+    margin: 23px auto;
+    margin-left: 20px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background: rgba(6, 26, 68, 0.801);
+    color: white;
+    font-size: 12px;
+}
+.read-more:hover{
+    background: orange;
+}
+/* End of main // And start of faculti section */
+.goal-section h2{
+    text-align: center; font-size: 30px; font-weight: bold; color: #222;
+    padding: 20px;
+}
+.goal-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.goal-box{
+    width: 400px;
+    box-sizing: border-box;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+}
+.goal-box:hover{
+    transform: scale(1.02);
+}
+.goal-box{
+    padding: 10px 25px;
+}
+.common-content{
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.common-list{
+    text-align: justify;
+    font-size: 14px;
+    color: #222;
+}
+.common-read{
+    width: 80px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background: rgba(6, 26, 68, 0.801);
+    color: white;
+    font-size: 12px;
+}
+.common-read:hover{
+    background: orange;
+}
+.peoper-desc{
+    font-size: 14px;
+    text-align: justify;
+    padding-top: 20px;
+}
+.proper-content{
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.proper-list{
+    text-align: justify;
+    font-size: 14px;
+    color: #222;
+}
+.proper-read{
+    width: 80px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background: rgba(6, 26, 68, 0.801);
+    color: white;
+    font-size: 12px;
+}
+.proper-read:hover{
+    background: orange;
+}
+
+/* End of faculti section // And start of side */
+.side{
+    width: 100%;
+    padding-top: 20px;
+}
+.side-h1{
+    font-size: 30px; color: #222; font-weight: bold; text-align: center; margin: 20px;
+}
+.main-side{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.side-box{
+    width: 400px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #ffffff;
+    margin: auto;
+}
+.side-box:hover{
+    transform: scale(1.02);
+}
+.side-img{
+    width: 100%;
+}
+.topic-2{
+    width: 80%px;
+    height: 250px;
+    padding: 10px;
+}
+.topic-2 p{
+    font-size: 13px; color: rgb(27, 27, 27); font-weight: bold; text-align:right; margin: 10px; font-family: IranSans; 
+}
+.side-a{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background: rgba(6, 26, 68, 0.801);
+    color: white;
+    font-size: 12px;
+}
+.side-a:hover{
+    background: orange;
+}
+/* End of side // And star of goals*/
+.faculty-header{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.faculty-main{
+    background: rgba(6, 26, 68, 0.801);
+}
+.faculty-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 2px;
+    color: white;
+    font-size: 15px;
+    font-family: body-f;
+    padding: 10px;
+}
+.faculty-table tr td{
+    border-bottom: 1px solid orange;
+    padding: 10px;
+}
+.faculty-table tr:hover{
+    background: orange;
+}
+/* ----- Footer ------ */
+.maid-by{
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.name{
+    font-weight: bold;display: inline-block; font-size: 10px; padding-top: 10px; margin: 5px;
+}
+.maid-by p{
+    font-size: 9px; display: inline-block;
+}
+@media screen and (max-width: 500px)
+{
+    .logo-img{
+        width: 15%;
+        margin-left: 3px;
+    }
+    .left-header{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .wellcome{
+        padding: 5px;
+    }
+    .hero-header{
+        font-size: 20px;
+        padding: 0;
+    }
+    .hero-desc{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .main-header{
+        font-size: 20px;
+        padding: 0;
+    }
+    .main-header span{
+        font-size: 17px;
+    }
+    .goal-section h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .side-h1{
+        font-size: 20px; margin: 10px;
+    }
+    .faculty-header{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .faculty-table{
+        font-size: 5px;
+        font-family: body-f;
+        padding: 5px;
+    }
+    .maid-by{
+        font-size: 5px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .name{
+        font-size: 8px;
+    }
+    .maid-by p{
+        font-size: 9px;
+    }
+}
+    
